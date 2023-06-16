@@ -1,57 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professores</title>
-    <style>
-body {
-  background-color: rgb(151, 184, 233);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professores</title>
+  <style>
+    body {
+      background-color: rgb(144, 171, 208);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-h1 {
-  color: black;
-  text-align: center;
-}
-.professores{text-align: center;}
+    h1 {
+      color: black;
+      text-align: center;
+    }
 
-.botao{text-color:	FA8072;}
+    .professores {
+      text-align: center;
+    }
 
-div{
-  text-align: center;
-  width: 500px;
-  border: 5px solid;
-  padding: 20px;
-  color: black;
+    .botao {
+      display: flex;
+      flex: 5;
+      justify-content: center;
+      align-self: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
 
-}
+    .botao a {
+      color: white;
+      text-decoration: none;
+    }
 
-    </style>
+    .fundo {
+      text-align: center;
+      width: 500px;
+      border: 5px solid;
+      background-color: rgb(131, 156, 192);
+      padding: 20px;
+      color: black;
+
+    }
+
+    .inserir {
+      background-color: rgb(68, 137, 193);
+    }
+
+    .uptade {
+      background-color: rgb(117, 113, 182);
+    }
+
+    .delete {
+      background-color: rgb(146, 197, 207);
+    }
+
+    .campos {
+      margin: 0 0 20px;
+    }
+
+    .professor:hover {
+      width: 80%;
+
+    }
+  </style>
 </head>
-<body>
-     <div>
-    <h1> Professores </h1>
-  <img src="./ceep.png" >
-    
 
-    
+<body>
+  <div class="fundo">
+    <h1> Professores </h1>
+    <img class="professor" src="./ceep.png">
+
+
+
     <form class="professores">
 
-      <h2> <label for="profnome">Professor:</label><br> </h2>
-      <input type="text" id="profnome" name="profnome"><br>
-      <h2> <label for="cpf">Cpf:</label><br> </h2>
-      <input type="text" id="Cpf" name="Cpf:"><br>
-      <h2> <label for="materia">Matéria:</label><br> </h2>
-      <input type="text" id="materia" name="materia"><br>
+      <div class="campos">
+        <h2> <label for="pk">PK:</label><br> </h2>
+        <input type="text" id="pk" name="pk"><br>
+        <h2> <label for="cpf">Cpf:</label><br> </h2>
+        <input type="text" id="Cpf" name="Cpf:"><br>
+        <h2> <label for="nome">Nome:</label><br> </h2>
+        <input type="text" id="nome" name="nome"><br>
+      </div>
 
-      <form class="botao">
-     <br> <a href="#">Gerar horário.</a> </form></br>
-        
-      </form>
-    </div> 
+      <div class="botao inserir" onclick="alert('Professor inserido')">
+        <br> <a href="#">Inserir.</a>
+      </div></br>
+
+      <div class="botao uptade"onclick="alert('Professor alterado')">
+        <br> <a href="#">Update.</a>
+      </div></br>
+
+      <div class="botao delete"onclick="alert('Professor excluído')">
+        <br> <a href="#">Delete.</a>
+      </div></br>
+
+    </form>
+  </div>
 </body>
+
 </html>

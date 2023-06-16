@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matéria</title>
+    <style>
+body {
+  background-color: rgb(144, 171, 208);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+.materia{text-align: center;}
+
+.botao {
+    display: flex;
+      flex: 5;
+      justify-content: center;
+      align-self: center;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgb(134, 109, 159);
+}
+
+.botao a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+
+
+
+.fundo{
+  text-align: center;
+  width: 500px;
+  border: 5px solid;
+  border-style: ;
+  background-color:rgb(131, 156, 192) ;
+  padding: 20px;
+  color: black;
+
+}
+
+.ceep:hover { width: 80%;
+
+}
+.campos {
+      margin: 0 0 20px;
+    }
+    </style>
+</head>
+<body>
+     <div class="fundo"> 
+    <h1> Matéria </h1>
+  <img class="ceep" src="./ceep.png" >
+
+    
+
+    
+    <form class="materia">
+
+      <div class="campos">
+      <h2> <label for="pk">PK:</label><br> </h2>
+      <input type="text" id="pk" name="pk"><br>
+      <h2> <label for="profnome">Professor:</label><br> </h2>
+      <input type="text" id="profnome" name="profnome"><br>
+      <h2> <label for="cargahora">Carga Horária:</label><br> </h2>
+      <input type="text" id="cargahora" name="cargahora:"><br>
+      <h2> <label for="curriculo">Curriculo:</label><br> </h2>
+      <input type="text" id="curriculo" name="curriculo"><br>
+      <h2> <label for="obs">Observação:</label><br> </h2>
+      <input type="text" id="obs" name="osb"><br>
+      </div>
+
+
+      <div class="botao" onclick="alert('materia inserida')">
+     <br> <a href="#">Inserir.</a> </div></br>
+        
+      </form>
+    </div> 
+</body>
+</html>
